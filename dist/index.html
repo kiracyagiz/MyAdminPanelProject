@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!----CSS----->
+    <link rel="stylesheet" href="output.css" />
+    <!----CSS----->
+
+    <!--Font Family---->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <!--Font Family---->
+  </head>
+  <body class="bg-greyBg">
+    <div class="header h-14 m-10 flex gap-40">
+      <div class="header-left flex gap-28">
+        <div class="header-left-first flex items-center gap-6">
+          <img src="../icons/Button (1).svg" alt="" class="lg:hidden" />
+          <img
+            src="../icons/logoIcon.svg"
+            alt=""
+            class="bg-white rounded-full p-2 hidden sm:block"
+          />
+          <p class="text-grey font-sans text-lg font-medium">Consturctor</p>
+          <img src="../icons/profileIcon.svg" alt="" class="lg:hidden ml-28" />
+        </div>
+
+        <div class="header-left-second items-center flex gap-10">
+          <p class="text-Hpurpler font-sans text-sm hidden sm:block">
+            Dashboard
+          </p>
+
+          <p class="text-grey font-sans text-sm hidden sm:block">Pages</p>
+          <p class="text-grey font-sans text-sm hidden sm:block">Posts</p>
+          <p class="text-grey font-sans text-sm hidden sm:block">Files</p>
+          <p class="text-grey font-sans text-sm hidden sm:block">Users</p>
+          <img src="../icons/moreIcon.svg" alt="" />
+        </div>
+      </div>
+
+      <div class="header-right flex">
+        <form action="" class="relative flex">
+          <input
+            type="text"
+            placeholder="Try searching «New Pages Today»  "
+            class="text-xs pr-20 pl-4 placeholder-gray rounded-2xl p-0 hidden sm:block"
+          />
+          <img
+            src="../icons/searchIcon.svg"
+            alt=""
+            class="absolute left-52 top-3"
+          />
+        </form>
+      </div>
+
+      <div class="headerSeconRight flex items-center gap-8">
+        <div
+          class="notification h-6 w-6 bg-notificationPurple rounded-full absolute top-8 right-44 hidden sm:block"
+        >
+          <p
+            class="bg-opacity-80 text-center p-1 text-white text-xs bg-clip-content"
+          >
+            1
+          </p>
+        </div>
+        <img
+          src="../icons/notificationIcon.svg"
+          class="h-15 w-15 bg-purple-200 rounded-full p-2 hidden sm:block"
+        />
+
+        <img
+          src="../icons/commentsIcon.svg"
+          alt=""
+          class="h-5 w-5 hidden sm:block"
+        />
+        <img
+          src="../icons/teamsIcon.svg"
+          alt=""
+          class="h-6 w-6 hidden sm:block"
+        />
+        <img
+          src="../icons/analysisIcon.svg"
+          alt=""
+          class="h-5 w-5 hidden sm:block"
+        />
+      </div>
+    </div>
+
+    <div class="container flex">
+      <!--LeftContent ---->
+
+      <div
+        class="leftcontentPanel ml-12 mt-20 h-97 w-73 border border-gray-300 mb-20 p-3 hidden sm:block rounded-xl"
+      >
+        <!--Dashboard---->
+
+        <div
+          class="dashboard flex justify-between align-middle m-4 items-center mb-6"
+        >
+          <div class="dashboard-l flex gap-x-4">
+            <img src="../leftContentIcon/dashboard.svg" alt="" />
+            <p class="font-sans text-grey">Dashboard</p>
+          </div>
+          <div class="dashboard-r flex gap-x-3">
+            <p
+              class="font-sans text-grey bg-white pt-1 pb-1 pr-3 p-3 rounded-full text-sm text-center"
+            >
+              1
+            </p>
+            <img src="../leftContentIcon/load.svg" alt="" />
+          </div>
+        </div>
+
+        <!--Pages---->
+
+        <div
+          class="pages flex justify-between align-middle m-1 p-3 rounded-xl items-center bg-pagesBg mb-6"
+        >
+          <div class="pages-l flex gap-x-4 pt-2 pb-2 items-center">
+            <img src="../leftContentIcon/pages.svg" class="bg-pagesBg" alt="" />
+            <p class="font-sans text-white">Pages</p>
+          </div>
+          <div class="pages-r flex gap-x-4">
+            <p
+              class="font-sans text-grey bg-pagesPurple pt-1 pb-1 pr-3 p-3 rounded-full text-sm text-white text-center"
+            >
+              3
+            </p>
+            <img src="../leftContentIcon/load.svg" alt="" />
+          </div>
+        </div>
+
+        <!--Posts---->
+
+        <div
+          class="posts flex justify-between align-middle m-4.5 w-auto items-center mb-6"
+        >
+          <div class="posts-l flex gap-x-5">
+            <img src="../leftContentIcon/posts.svg" alt="" />
+            <p class="font-sans text-grey">Posts</p>
+          </div>
+          <div class="posts-r flex gap-x-3">
+            <p class="text-white bg-postsOrange p-2 pl-4 pr-4 rounded-full">
+              NEW
+            </p>
+            <img src="../leftContentIcon/load.svg" alt="" />
+          </div>
+        </div>
+
+        <!--Media Files---->
+
+        <div
+          class="media flex justify-between align-middle m-4 items-center mb-6"
+        >
+          <div class="media-l flex gap-x-4">
+            <img src="../leftContentIcon/media.svg" alt="" />
+            <p class="font-sans text-grey">Meda Files</p>
+          </div>
+          <div class="media-r flex gap-x-3">
+            <p
+              class="font-sans text-grey bg-white pt-1 pb-1 pr-3 p-3 rounded-full text-sm text-center"
+            >
+              1
+            </p>
+            <img src="../leftContentIcon/load.svg" alt="" />
+          </div>
+        </div>
+
+        <!--Users---->
+
+        <div class="usersContent bg-white rounded-lg pt-1">
+          <div
+            class="users flex justify-between align-middle m-4 items-center mb-6"
+          >
+            <div class="users-l flex gap-x-4">
+              <img src="../leftContentIcon/users.svg" alt="" />
+              <p class="font-sans text-grey">Meda Files</p>
+            </div>
+            <div class="users-r flex gap-x-3">
+              <p
+                class="font-sans text-grey bg-white pt-1 pb-1 pr-3 p-3 rounded-full text-sm text-center"
+              >
+                1
+              </p>
+              <img src="../leftContentIcon/load.svg" alt="" />
+            </div>
+          </div>
+          <div class="line h-2 ml-3 mr-3">
+            <div class="w-full border border-grey opacity-20"></div>
+          </div>
+
+          <div
+            class="character flex justify-between ml-3 mr-4 mt-3 items-center mb-3 p-1"
+          >
+            <div class="character-left flex items-center gap-x-3">
+              <img src="../leftContentIcon/Avatar Image.svg" alt="" />
+              <p class="text-sm">Bess Atkins</p>
+            </div>
+            <div class="character-right flex items-center gap-x-2">
+              <img src="../leftContentIcon/active.svg" alt="" />
+              <p class="text-sm">Active</p>
+            </div>
+          </div>
+
+          <div
+            class="character flex justify-between ml-3 mr-4 mt-3 items-center mb-3 p-1"
+          >
+            <div class="character-left flex items-center gap-x-3">
+              <img src="../leftContentIcon/Avatar Image.svg" alt="" />
+              <p class="text-sm">Bess Atkins</p>
+            </div>
+            <div class="character-right flex items-center">
+              <img src="../leftContentIcon/offline.svg" alt="" />
+              <p class="text-sm">Offline</p>
+            </div>
+          </div>
+
+          <div
+            class="character flex justify-between ml-3 mr-4 mt-3 items-center mb-3 p-1"
+          >
+            <div class="character-left flex items-center gap-x-3">
+              <img src="../leftContentIcon/Avatar Image.svg" alt="" />
+              <p class="text-sm">Bess Atkins</p>
+            </div>
+            <div class="character-right flex items-center gap-x-3">
+              <img src="../leftContentIcon/wait.svg" alt="" />
+              <p class="text-sm text-left">Wait</p>
+            </div>
+          </div>
+
+          <div
+            class="character flex justify-between ml-3 mr-4 mt-3 items-center mb-3 p-1"
+          >
+            <div class="character-left flex items-center gap-x-3">
+              <img src="../leftContentIcon/Avatar Image.svg" alt="" />
+              <p class="text-sm">Bess Atkins</p>
+            </div>
+            <div class="character-right flex items-center gap-x-3">
+              <img src="../leftContentIcon/wait.svg" alt="" />
+              <p class="text-sm text-left">Wait</p>
+            </div>
+          </div>
+
+          <div
+            class="character flex justify-between ml-3 mr-4 mt-3 items-center mb-3 p-1"
+          >
+            <div class="character-left flex items-center gap-x-3">
+              <img src="../leftContentIcon/Avatar Image.svg" alt="" />
+              <p class="text-sm">Bess Atkins</p>
+            </div>
+            <div class="character-right flex items-center gap-x-3">
+              <img src="../leftContentIcon/wait.svg" alt="" />
+              <p class="text-sm text-left">Wait</p>
+            </div>
+          </div>
+
+          <div
+            class="character flex justify-between ml-3 mr-4 mt-3 items-center mb-3 p-1 pb-4"
+          >
+            <div class="character-left flex items-center gap-x-3">
+              <img src="../leftContentIcon/Avatar Image.svg" alt="" />
+              <p class="text-sm">Bess Atkins</p>
+            </div>
+            <div class="character-right flex items-center">
+              <img src="../leftContentIcon/offline.svg" alt="" />
+              <p class="text-sm">Offline</p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="categories flex justify-between align-middle m-4 items-center mb-6"
+        >
+          <div class="categories-l flex gap-x-4">
+            <img src="../leftContentIcon/categories.svg" alt="" />
+            <p class="font-sans text-grey">Categories</p>
+          </div>
+          <div class="categories-r flex gap-x-3">
+            <p
+              class="font-sans text-grey bg-white pt-1 pb-1 pr-3 p-3 rounded-full text-sm text-center"
+            >
+              1
+            </p>
+            <img src="../leftContentIcon/load.svg" alt="" />
+          </div>
+        </div>
+
+        <div
+          class="tags flex justify-between align-middle m-4 items-center mb-6"
+        >
+          <div class="tags-l flex gap-x-4">
+            <img src="../leftContentIcon/dashboard.svg" alt="" />
+            <p class="font-sans text-grey">Tags</p>
+          </div>
+          <div class="tags-r flex gap-x-3">
+            <p
+              class="font-sans text-grey bg-white pt-1 pb-1 pr-3 p-3 rounded-full text-sm text-center"
+            >
+              1
+            </p>
+            <img src="../leftContentIcon/load.svg" alt="" />
+          </div>
+        </div>
+
+        <div
+          class="comments flex justify-between align-middle m-4 items-center mb-6"
+        >
+          <div class="comments-l flex gap-x-4">
+            <img src="../leftContentIcon/comments.svg" alt="" />
+            <p class="font-sans text-grey">Comments</p>
+          </div>
+          <div class="comments-r flex gap-x-3">
+            <p
+              class="font-sans text-grey bg-white pt-1 pb-1 pr-3 p-3 rounded-full text-sm text-center"
+            >
+              1
+            </p>
+            <img src="../leftContentIcon/load.svg" alt="" />
+          </div>
+        </div>
+
+        <div
+          class="settings flex justify-between align-middle m-4 items-center mb-6"
+        >
+          <div class="settings-l flex gap-x-4">
+            <img src="../leftContentIcon/settings.svg" alt="" />
+            <p class="font-sans text-grey">Settings</p>
+          </div>
+          <div class="settings-r flex gap-x-3">
+            <img src="../leftContentIcon/load.svg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <!--Mid Container--->
+
+      <d  iv class="mid-container  mt-20 m-auto sm:ml-20 items-center">
+
+        <div class="cards ">
+            <div class="cards-top grid grid-cols-2 sm:grid-cols-3 gap-7 p-0 m-0   ">
+                <div class="green-card w-44 h-44 bg-cardGreen rounded-xl pb-3  ">
+                    <div class="card-top flex items-center p-3 justify-between m-2 text-white">
+                        <p class="text-sm">Pages</p>
+                        <img src="../icons/moreIcon.svg" alt="">
+                    </div>
+                    <div class="card-mid text-center text-3xl text-white">
+                        1 345
+                    </div>
+                    <div class="card-bot flex tex-cetner gap-7 mt-5 ml-5">
+                        <img src="../midcontent/plus.svg" alt="" class="bg-green-600 pl-3 pr-3 rounded-full ">
+                        <p class="text-xs text-white p-3 pl-4 pr-4 bg-green-600 rounded-full ">View All</p>
+                    </div>
+                </div>
+    
+    
+    
+                <div class="purple-card w-44 h-44 bg-Hpurpler rounded-xl pb-3 ">
+                    <div class="card-top flex items-center p-3 justify-between m-2 text-white">
+                        <p class="text-sm">Posts</p>
+                        <img src="../icons/moreIcon.svg" alt="">
+                    </div>
+                    <div class="card-mid text-center text-3xl text-white">
+                       12 456
+                    </div>
+                    <div class="card-bot flex tex-cetner gap-7 mt-5 ml-5">
+                        <img src="../midcontent/plus.svg" alt="" class="bg-purpleDark pl-3 pr-3 rounded-full ">
+                        <p class="text-xs text-white p-3 pl-4 pr-4 bg-purpleDark rounded-full ">View All</p>
+                    </div>
+                </div>
+    
+                <div class="green-card w-44 h-44 bg-postsOrange rounded-xl pb-3 ">
+                    <div class="card-top flex items-center p-3 justify-between m-2 text-white">
+                        <p class="text-sm">Pages</p>
+                        <img src="../icons/moreIcon.svg" alt="">
+                    </div>
+                    <div class="card-mid text-center text-3xl text-white">
+                        21
+                    </div>
+                    <div class="card-bot flex tex-cetner gap-7 mt-5 ml-5">
+                        <img src="../midcontent/plus.svg" alt="" class="bg-orangeDark pl-3 pr-3 rounded-full ">
+                        <p class="text-xs text-white p-3 pl-4 pr-4 bg-orangeDark rounded-full ">View All</p>
+                    </div>
+                </div>
+            
+                <div class="blue-card w-44 h-44 bg-blueOne rounded-xl pb-3 ">
+                  <div class="card-top flex items-center p-3 justify-between m-2 text-white">
+                      <p class="text-sm">Files</p>
+                      <img src="../icons/moreIcon.svg" alt="">
+                  </div>
+                  <div class="card-mid text-center text-3xl text-white">
+                      1 220
+                  </div>
+                  <div class="card-bot flex tex-cetner gap-7 mt-5 ml-5">
+                      <img src="../midcontent/plus.svg" alt="" class="bg-darkBlue pl-3 pr-3 rounded-full ">
+                      <p class="text-xs text-white p-3 pl-4 pr-4 bg-darkBlue rounded-full ">View All</p>
+                  </div>
+              </div>
+  
+  
+  
+              <div class="purple-card w-44 h-44 bg-firstBlack rounded-xl pb-3 ">
+                  <div class="card-top flex items-center p-3 justify-between m-2 text-white">
+                      <p class="text-sm">Categories</p>
+                      <img src="../icons/moreIcon.svg" alt="">
+                  </div>
+                  <div class="card-mid text-center text-3xl text-white">
+                     65
+                  </div>
+                  <div class="card-bot flex tex-cetner gap-7 mt-5 ml-5">
+                      <img src="../midcontent/plus.svg" alt="" class="bg-secondaryBlack pl-3 pr-3 rounded-full ">
+                      <p class="text-xs text-white p-3 pl-4 pr-4 bg-secondaryBlack rounded-full ">View All</p>
+                  </div>
+              </div>
+  
+              <div class="green-card w-44 h-44 bg-white rounded-xl pb-3 ">
+                  <div class="card-top flex items-center p-3 justify-between m-2 text-grey">
+                      <p class="text-sm">Comments</p>
+                      <img src="../icons/moreIcon.svg" alt="">
+                  </div>
+                  <div class="card-mid text-center text-3xl text-grey">
+                      9 876
+                  </div>
+                  <div class="card-bot flex tex-cetner gap-7 mt-5 ml-5">
+                      <img src="../midcontent/secondPlus.svg" alt="" class="bg-greyBlue pl-3 pr-3 rounded-full ">
+                      <p class="text-xs text-grey p-3 pl-4 pr-4 bg-greyBlue rounded-full ">View All</p>
+                  </div>
+              </div>
+              </div>
+
+
+        </div>
+
+        <div class="user-stats mt-12 w-auto h-auto ">
+          <img src="../midcontent/User Stat.png"  alt="">
+        </div>
+ 
+        <div class="statistics mt-12 w-auto h-auto">
+          <img src="../midcontent/Statisticcs.png" alt="">
+        </div>
+
+        
+    </div>
+
+    </div>
+  </body>
+</html>
